@@ -1,0 +1,295 @@
+/* =================================================================== */
+/*                             IMPORTS                               */
+/* =================================================================== */
+
+
+/* =================================================================== */
+/*                            RESETS BÁSICOS                           */
+/* =================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* =================================================================== */
+/*                        VARIAVEIS REUTILIZAVEIS                      */
+/* =================================================================== */
+
+:root {
+    --bg: linear-gradient(135deg, rgba(0, 0, 0, 0.916), rgba(59, 59, 59, 0.943));
+    --text-ligth: #f2f2f2;
+    --text-dark: #111111b5;
+    --border-color: rgba(245, 245, 245, 0.532);
+    --font: Poppins;
+
+    /* bordas */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 24px;
+
+    /* transicoes */
+    --transition-fast: all 0.2s ease;
+    --transition-soft: all 0.3s ease;
+    --transition-normal: all 0.5s ease;
+
+    /* glass */
+    --blur: blur(10px);
+}
+
+/* Utilizando a letra poppins importada internamente */
+@font-face {
+    font-family: Poppins;
+    src: url(./Poppins-Regular.ttf);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    /*vira um conatiner flex vertical*/
+    background: var(--bg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(--text-ligth);
+    height: 100dvh;
+    font-family: var(--font);
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-left: 3px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 14px;
+}
+
+a {
+    font-size: 14px;
+}
+
+/* =================================================================== */
+/*                                HEADER                               */
+/* =================================================================== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    border-radius: 0 0 12px 12px;
+    /* border-bottom: 1px solid var(--border-color); */
+    padding: 12px;
+    backdrop-filter: var(--blur);
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+}
+
+header button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+nav {
+    font-size: 26px;
+}
+
+/* logo icone */
+.logo {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+/* conteudo da introduction */
+.intro {
+    margin-top: 80px;
+}
+
+/* main */
+main {
+    flex: 1;
+    /*cresce e ocupa o espaço disponivel*/
+}
+
+/* =================================================================== */
+/*                         CONTAINER E CARDS                           */
+/* =================================================================== */
+.container-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+}
+
+.container-exercicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.top {
+    margin-top: 80px;
+}
+
+/* cards */
+.card {
+    background: rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 350px;
+    padding: 20px;
+    transition: var(--transition-soft);
+    border-radius: var(--radius-md);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.322);
+}
+
+.card-ex {
+    background: rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 350px;
+    padding: 20px;
+    transition: var(--transition-soft);
+    border-radius: var(--radius-md);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.322);
+}
+
+.card-notes {
+    background: rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 350px;
+    padding: 20px;
+    transition: var(--transition-soft);
+    border-radius: var(--radius-md);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.322);
+}
+
+.card-notes p{
+    background: rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 300px;
+    padding: 20px;
+    transition: var(--transition-soft);
+    border-radius: var(--radius-md);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.322);
+}
+
+.card-ex input {
+    width: 75%;
+    height: 35px;
+    border-radius: var(--radius-md);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: var(--text-dark);
+    border: none;
+}
+
+.card-ex input:focus{
+    margin-left: 10px;
+}
+
+/* hyperlinks dos cards */
+.btn {
+    background: rgba(255, 255, 255, 0.603);
+    color: rgb(37, 35, 35);
+    padding: 12px 24px;
+    border: none;
+    border-radius: var(--radius-md);
+    margin-top: 10px;
+    cursor: pointer;
+    transition: var(--transition-soft);
+}
+
+.back {
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    font-size: 28px;
+}
+
+/* parágrafos dentro dos card */
+.card p {
+    margin-bottom: 18px;
+}
+
+abbr {
+    cursor: help;
+}
+
+/* =================================================================== */
+/*                             ANIMAÇÕES                               */
+/* =================================================================== */
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card-notes p:hover {
+    transform: translateX(8px);
+    background: #f2f2f2a2;
+    color: var(--text-dark);
+}
+
+.btn:hover {
+    border: 2px solid rgba(255, 255, 255, 0.55);
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/* =================================================================== */
+/*                                FOOTER                               */
+/* =================================================================== */
+
+footer {
+    background: rgba(0, 0, 0, 0.493);
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+}

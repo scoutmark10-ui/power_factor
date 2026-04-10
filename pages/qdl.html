@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <title>Demanda QDL</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <a class="back" href="../index.html">&larr;</a>
+        <h1>Demanda QDL</h1>
+        <button type="button">H</button>
+    </header>
+    <main class="container-exercicio top">
+        <section class="card-ex">
+            <p>
+                <label for="txtn1">Digite a o numero de lampadas</label>
+                <input id="n1" type="number">
+            </p>
+            <p>
+                <label for="txtn2">Digite a potência nominal (PN)</label>
+                <input id="n2" type="number">
+            </p>
+            <p>
+                <label for="txtn3">Digite a potência resistiva (PR)</label>
+                <input id="n3" type="number">
+            </p>
+            <p>
+                <label for="txtn4">Digite factor de potência</label>
+                <input id="n4" type="number">
+            </p>
+
+            <button class="btn" type="button" onclick="calcular()">Calcular</button>
+        </section>
+
+<section>
+    <article class="card-ex">
+        <p id="res">Resultado</p>
+    </article>
+</section>
+
+        <section class="card-notes">
+            <h3>Factos importantes</h3>
+
+            <p>A fórmula do cálculo contém o valor de FM que é uma constante 1,8</p>
+
+            <p>Factor de potência caso não exista resistividade será igual a 1</p>
+
+            <p>Apenas Luzes incandescentes tem resisticidade ao contrario das florescentes (FP=1)</p>
+        </section>
+    </main>
+
+    <footer class="footer"></footer>
+    <script type="module" src="../js/main.js"></script>
+    <script src="../js/qdl.js"></script>
+</body>
+
+</html>
