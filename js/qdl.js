@@ -33,7 +33,7 @@ function calcular() {
 
   // cálculo da demanda do QDL (kVA)
   // fórmula: fm * (n * (pn + pr/fp)) / 1000
-  let d_qdl = fm * ((n_lampadas * (pn + (pr / fp))) / 1000);
+  let d_qdl = (fm*(n_lampadas * (pn + (pr / fp))) / 1000);
 
   // exibição do resultado com 2 casas decimais
   res.innerHTML = `Resultado: ${d_qdl.toFixed(2)} kVA`;
