@@ -18,7 +18,11 @@
 /* =================================================================== */
 
 :root {
+<<<<<<< HEAD
     --bg: #000000e0;
+=======
+    --bg: linear-gradient(135deg, rgba(0, 0, 0, 0.916), rgba(59, 59, 59, 0.943));
+>>>>>>> 82d593acf28b72a860d8cd9aa65fa8c7167160a6
     --text-ligth: #f2f2f2;
     --text-dark: #111111b5;
     --border-color: rgba(245, 245, 245, 0.532);
@@ -80,16 +84,28 @@ h6 {
 }
 
 h1 {
+<<<<<<< HEAD
     font-size: 20px;
+=======
+    font-size: 28px;
+>>>>>>> 82d593acf28b72a860d8cd9aa65fa8c7167160a6
     margin-left: 3px;
 }
 
 h2 {
+<<<<<<< HEAD
     font-size: 18px;
 }
 
 h3 {
     font-size: 16px;
+=======
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 18px;
+>>>>>>> 82d593acf28b72a860d8cd9aa65fa8c7167160a6
 }
 
 p {
@@ -108,18 +124,32 @@ header {
     justify-content: space-between;
     align-items: center;
     position: fixed;
+<<<<<<< HEAD
     border-radius: 0 0 24px 24px;
+=======
+    border-radius: 0 0 12px 12px;
+    /* border-bottom: 1px solid var(--border-color); */
+>>>>>>> 82d593acf28b72a860d8cd9aa65fa8c7167160a6
     padding: 12px;
     backdrop-filter: var(--blur);
     top: 0;
     left: 0;
     width: 100%;
+<<<<<<< HEAD
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.094);
 }
 
 header button {
     width: 30px;
     height: 30px;
+=======
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+}
+
+header button {
+    width: 40px;
+    height: 40px;
+>>>>>>> 82d593acf28b72a860d8cd9aa65fa8c7167160a6
     border-radius: 50%;
     border: none;
 }
@@ -181,10 +211,17 @@ main {
 
 /* cards */
 .card {
+<<<<<<< HEAD
     background: rgba(2, 2, 2, 0.1);
     margin: 10px;
     width: 350px;
     padding: 35px;
+=======
+    background: rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 350px;
+    padding: 20px;
+>>>>>>> 82d593acf28b72a860d8cd9aa65fa8c7167160a6
     transition: var(--transition-soft);
     border-radius: var(--radius-md);
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.322);
@@ -194,7 +231,11 @@ main {
     background: rgba(0, 0, 0, 0.1);
     margin: 10px;
     width: 350px;
+<<<<<<< HEAD
     padding: 25px;
+=======
+    padding: 20px;
+>>>>>>> 82d593acf28b72a860d8cd9aa65fa8c7167160a6
     transition: var(--transition-soft);
     border-radius: var(--radius-md);
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.322);
@@ -213,7 +254,10 @@ main {
 .card-notes p{
     background: rgba(0, 0, 0, 0.1);
     margin: 10px;
+<<<<<<< HEAD
     margin-top: 20px;
+=======
+>>>>>>> 82d593acf28b72a860d8cd9aa65fa8c7167160a6
     width: 300px;
     padding: 20px;
     transition: var(--transition-soft);
@@ -235,6 +279,7 @@ main {
     margin-left: 10px;
 }
 
+<<<<<<< HEAD
 /* =================================================================== */
 /*                        RADIO BUTTONS (QDL)                          */
 /* =================================================================== */
@@ -295,6 +340,12 @@ input[type="radio"]:checked::after {
 .btn {
     background: rgba(255, 255, 255, 0.603);
     color: rgb(14, 13, 13);
+=======
+/* hyperlinks dos cards */
+.btn {
+    background: rgba(255, 255, 255, 0.603);
+    color: rgb(37, 35, 35);
+>>>>>>> 82d593acf28b72a860d8cd9aa65fa8c7167160a6
     padding: 12px 24px;
     border: none;
     border-radius: var(--radius-md);
@@ -348,6 +399,7 @@ footer {
     text-align: center;
     margin-top: 20px;
     padding: 20px;
+<<<<<<< HEAD
 }
 
 /* =================================================================== */
@@ -555,4 +607,6 @@ body.light-theme .sidebar-btn:hover {
 .sidebar-overlay.active {
     opacity: 1;
     pointer-events: all;
+=======
+>>>>>>> 82d593acf28b72a860d8cd9aa65fa8c7167160a6
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 let radios = document.querySelectorAll('input[name="lampada"]');
 let card_ex = document.getElementById('card-ex');
 
@@ -44,6 +45,9 @@ updateForm();
 radios.forEach(radio => radio.addEventListener('change', updateForm));
 
 function calcularOp1() {
+=======
+function calcular() {
+>>>>>>> 82d593acf28b72a860d8cd9aa65fa8c7167160a6
 
   // captura valores dos inputs (como string)
   let v1 = document.getElementById('n1').value;
@@ -78,11 +82,16 @@ function calcularOp1() {
 
   // cálculo da demanda do QDL (kVA)
   // fórmula: fm * (n * (pn + pr/fp)) / 1000
+<<<<<<< HEAD
   let d_qdl = (fm * n_lampadas * (pn + (pr / fp))) / 1000;
+=======
+  let d_qdl = (fm*(n_lampadas * (pn + (pr / fp))) / 1000);
+>>>>>>> 82d593acf28b72a860d8cd9aa65fa8c7167160a6
 
   // exibição do resultado com 2 casas decimais
   res.innerHTML = `Resultado: ${d_qdl.toFixed(2)} kVA`;
 }
+<<<<<<< HEAD
 
 function calcularOp2() {
 
@@ -114,3 +123,5 @@ function calcularOp2() {
   // exibição do resultado com 2 casas decimais
   res.innerHTML = `Resultado: ${d_qdl.toFixed(2)} kVA`;
 }
+=======
+>>>>>>> 82d593acf28b72a860d8cd9aa65fa8c7167160a6
