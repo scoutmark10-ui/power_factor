@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <title>Demanda QGF</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="manifest" href="../manifest.json">
+</head>
+
+<body>
+    <header>
+        <a class="back" href="../home.html">&larr;</a>
+        <h1>Demanda QGF</h1>
+        <button type="button">H</button>
+    </header>
+    <main class="container-exercicio top">
+        <section class="card-ex">
+
+            <!-- funcionalidade futura -->
+            <!-- <p>
+                <label for="txtn1">Digite o numero de demandas de CMM</label>
+                <input id="n1" type="number">
+            </p> -->
+            <p>
+                <label for="txtn2">Digite a demanda CMM (D<sub>cmm</sub>)</label>
+                <input id="n2" type="number">
+            </p>
+            <p>
+                <label for="n3">Digite a demanda de luz (D<sub>QDL</sub>)</label>
+                <input id="n3" type="number">
+            </p>
+
+            <button class="btn" type="button" onclick="calcular()">Calcular</button>
+        </section>
+
+        <section>
+            <article class="card-ex">
+                <p id="res">Resultado</p>
+            </article>
+        </section>
+
+        <section class="card-notes">
+            <h3>Dicas</h3>
+            <p>Faça a soma dos valores da <strong>Demanda CMM</strong> caso tenha outro circuito separado</p>
+        </section>
+    </main>
+    <footer class="footer"></footer>
+    <script type="module" src="../js/main.js"></script>
+    <script src="../js/qgf.js"></script>
+</body>
+
+</html>

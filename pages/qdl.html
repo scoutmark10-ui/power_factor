@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <title>Demanda QDL</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="manifest" href="../manifest.json">
+</head>
+
+<body>
+    <header>
+        <a class="back" href="../home.html">&larr;</a>
+        <h1>Demanda QDL</h1>
+        <button type="button">H</button>
+    </header>
+    <main class="container-exercicio top">
+        <div class="radio-group">
+            <label class="radio-label">
+                <input type="radio" name="lampada" id="incandescente" checked>
+                Incandescente
+            </label>
+            <label class="radio-label">
+                <input type="radio" name="lampada" id="fluorescente">
+                Fluorescente
+            </label>
+        </div>
+
+        <section class="card-ex" id="card-ex">
+
+        </section>
+
+        <section>
+            <article class="card-ex">
+                <p id="res">Resultado</p>
+            </article>
+        </section>
+
+        <section class="card-notes">
+            <h3>Factos importantes</h3>
+
+            <p>A fórmula do cálculo contém o valor de FM  é uma constante 1,8</p>
+
+            <p>Factor de potência caso não exista resistividade será igual a 1</p>
+
+            <p>Apenas Luzes incandescentes tem resistividade ao contrário das fluorescentes (FP=1)</p>
+        </section>
+    </main>
+
+    <footer class="footer"></footer>
+    <script type="module" src="../js/main.js"></script>
+    <script src="../js/qdl.js"></script>
+</body>
+
+</html>

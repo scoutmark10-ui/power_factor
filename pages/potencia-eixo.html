@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <title>Potência do eixo</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="manifest" href="../manifest.json">
+</head>
+<body>
+    <header>
+        <a class="back" href="../home.html">&larr;</a>
+        <h1>Potência do eixo</h1>
+        <button type="button">H</button>
+    </header>
+    <main class="container-exercicio top">
+        <section class="card-ex top">
+            <p>
+                <label for="txt">Digite a Potência Nominal (PN):</label>
+                <input id="n1" type="number">
+            </p>
+            <p>
+                <label for="txtn2">Digite o factor de utilização (FU):</label>
+                <input id="n2" type="number">
+            </p>
+            <button class="btn" type="button" onclick="calcular()">Calcular</button>
+
+        </section>
+        <section class="card-ex">
+            <p id="res">Resultado</p>
+        </section>
+    </main>
+    <footer class="footer"></footer>
+    <script type="module" src="../js/main.js"></script>
+    <script src="../js/potencia-eixo.js"></script>
+</body>
+</html>
