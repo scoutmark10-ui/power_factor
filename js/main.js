@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* =================================================================== */
 /*                       BOAS VINDAS E USUÁRIO                         */
 /* =================================================================== */
@@ -15,14 +14,11 @@ if (!userName && !isIndexPage) {
     window.location.href = './home.html';
 }
 
-=======
->>>>>>> 82d593acf28b72a860d8cd9aa65fa8c7167160a6
 const anoAtual = new Date().getFullYear();
 const footer = document.querySelector(".footer");
 
 if (footer) {
     footer.innerHTML = `<p>&copy; ${anoAtual} Handerson Dev. Todos os direitos reservados.</p>`;
-<<<<<<< HEAD
 }
 
 // Se estiver na home.html e houver o título intro, atualiza com o nome do usuário
@@ -124,6 +120,4 @@ if ('serviceWorker' in navigator) {
             console.log('Falha no registro do ServiceWorker: ', err);
         });
     });
-=======
->>>>>>> 82d593acf28b72a860d8cd9aa65fa8c7167160a6
 }
