@@ -1,0 +1,68 @@
+/* Utilizando a letra poppins importada internamente */
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    /* vira um container flex vertical */
+    background: var(--bg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: var(--text-ligth);
+    height: 100dvh;
+    font-family: "Poppins", "Segoe UI", "Trebuchet MS", sans-serif;
+    line-height: 1.5;
+    position: relative;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 20px;
+    margin-left: 3px;
+    letter-spacing: 0.2px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+p {
+    font-size: 14px;
+    color: var(--text-ligth);
+}
+
+a {
+    font-size: 14px;
+    color: inherit;
+}
+
+input,
+button {
+    font: inherit;
+}

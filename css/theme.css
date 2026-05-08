@@ -1,0 +1,94 @@
+/* =================================================================== */
+/*                           TEMA CLARO E MENU                         */
+/* =================================================================== */
+
+body.light-theme {
+    --bg: radial-gradient(circle at 15% 16%, #e9f5ff 0%, #f4f9ff 44%, #f5f7fb 100%);
+    --text-ligth: #101722;
+    --text-dark: #111;
+    --text-muted: #445469;
+    --border-color: rgba(14, 35, 58, 0.16);
+    --surface-1: rgba(255, 255, 255, 0.78);
+    --surface-2: rgba(245, 249, 255, 0.9);
+    --surface-card: rgba(255, 255, 255, 0.84);
+    --accent: #2089b8;
+    --accent-strong: #126f98;
+    --shadow-soft: 0 10px 24px rgba(18, 48, 80, 0.12);
+    --shadow-strong: 0 16px 30px rgba(18, 48, 80, 0.16);
+}
+
+body.light-theme .card,
+body.light-theme .card-ex,
+body.light-theme .exercise-card,
+body.light-theme .card-notes,
+body.light-theme .exercise-notes,
+body.light-theme .card-notes p,
+body.light-theme .exercise-notes p {
+    background: var(--surface-card);
+    box-shadow: var(--shadow-soft);
+}
+
+body.light-theme header {
+    background: var(--surface-1);
+    box-shadow: var(--shadow-soft);
+}
+
+body.light-theme .btn {
+    background: linear-gradient(135deg, #2ca0cf, #1a7da6);
+    color: #f4fbff;
+}
+
+body.light-theme .btn:hover {
+    background: linear-gradient(135deg, #248fb9, #176d90);
+}
+
+body.light-theme input[type="radio"] {
+    border-color: #555;
+    background: rgba(255,255,255, 0.5);
+}
+
+body.light-theme input[type="radio"]:checked {
+    border-color: #111;
+}
+
+body.light-theme input[type="radio"]:checked::after {
+    background-color: #111;
+    box-shadow: none;
+}
+
+body.light-theme footer {
+    background: var(--surface-2);
+}
+
+body.light-theme .back,
+body.light-theme .nav-back,
+body.light-theme header nav {
+    color: #111;
+}
+
+body.light-theme .math-view {
+    background: linear-gradient(160deg, rgba(44, 160, 207, 0.16), rgba(44, 160, 207, 0.06));
+    box-shadow: 0 0 0 1px rgba(32, 137, 184, 0.25);
+}
+
+body.light-theme .math-result {
+    color: #11384e;
+}
+
+body.light-theme .math-step {
+    color: #294b62;
+}
+
+body.light-theme .home-quick-link {
+    background: rgba(0, 0, 0, 0.04);
+}
+
+body.light-theme .home-quick-link:hover {
+    background: rgba(0, 0, 0, 0.08);
+}
+
+body.light-theme .calc-tags span {
+    background: rgba(0, 0, 0, 0.04);
+    border-color: rgba(0, 0, 0, 0.12);
+    color: #2a475f;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <title>Power Factor - Boas Vindas</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="manifest" href="./manifest.json">
+</head>
+
+<body>
+    <header class="header-welcome">
+        <h1><img class="logo" src="./img/logo.jpg" alt="logo">Power Factor</h1>
+    </header>
+
+    <main class="container-exercicio main-welcome">
+        <!-- Card de Boas-Vindas usando as classes que já existem -->
+        <section class="card card-welcome">
+            <div class="welcome-emoji">👋</div>
+            <h2 class="welcome-title">Oi, vamos nos conhecer?</h2>
+            <p class="welcome-text">
+                Para personalizar sua experiência com o Power Factor, por favor, me diga como devo te chamar.
+            </p>
+
+            <p>
+                <input id="usernameInput" type="text" placeholder="Digite seu nome...">
+            </p>
+
+            <button class="btn btn-welcome" type="button" onclick="salvarNome()">Entrar</button>
+        </section>
+    </main>
+
+    <footer class="footer"></footer>
+
+    <script>
+        // Função para salvar nome e entrar
+        function salvarNome() {
+            const input = document.getElementById('usernameInput');
+            const nome = input.value.trim();
+            if (nome.length > 2) {
+                localStorage.setItem('powerFactorUserName', nome);
+                // Direcionar para a Home
+                window.location.href = './home.html';
+            } else {
+                input.classList.add('input-error');
+                input.placeholder = 'Nome muito curto!';
+                setTimeout(() => {
+                    input.classList.remove('input-error');
+                    input.placeholder = 'Digite seu nome...';
+                }, 2000);
+            }
+        }
+
+        // Permite entrar apertando Enter
+        document.getElementById('usernameInput').addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') salvarNome();
+        });
+    </script>
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+/* =================================================================== */
+/*                        VARIAVEIS REUTILIZAVEIS                      */
+/* =================================================================== */
+
+:root {
+    --bg: radial-gradient(circle at 12% 18%, #19324a 0%, #0f1b2b 28%, #090f18 65%, #05070d 100%);
+    --text-ligth: #edf2fa;
+    --text-dark: #10131a;
+    --text-muted: #c3cfdf;
+    --border-color: rgba(237, 242, 250, 0.28);
+    --surface-1: rgba(15, 24, 37, 0.72);
+    --surface-2: rgba(10, 17, 28, 0.56);
+    --surface-card: rgba(14, 23, 35, 0.64);
+    --accent: #6ad2ff;
+    --accent-strong: #39bdf5;
+    --shadow-soft: 0 10px 30px rgba(3, 8, 15, 0.28);
+    --shadow-strong: 0 18px 45px rgba(2, 6, 12, 0.45);
+
+    /* bordas */
+    --radius-sm: 8px;
+    --radius-md: 14px;
+    --radius-lg: 24px;
+
+    /* transicoes */
+    --transition-fast: all 0.2s ease;
+    --transition-soft: all 0.3s ease;
+    --transition-normal: all 0.5s ease;
+
+    /* glass */
+    --blur: blur(10px);
+}

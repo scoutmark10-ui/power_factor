@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <title>Potencia do eixo</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="manifest" href="../manifest.json">
+</head>
+
+<body>
+    <header>
+        <a class="nav-back" href="../home.html" aria-label="Voltar ao inicio">&larr;</a>
+        <h1>Potencia do eixo</h1>
+        <button type="button" aria-label="Abrir menu rapido">H</button>
+    </header>
+
+    <main class="exercise-layout page-offset-top">
+        <section class="exercise-card exercise-page-header">
+            <p class="exercise-kicker">Etapa 1</p>
+            <h2>Potencia do eixo</h2>
+            <p class="exercise-description">Defina a potencia efetiva usada no eixo com base na potencia nominal e no fator de utilizacao.</p>
+        </section>
+
+        <section class="exercise-main-grid">
+            <section class="exercise-card exercise-form-card">
+                <p>
+                    <label for="n1">Digite a Potencia Nominal (CV)</label>
+                    <input id="n1" type="number">
+                </p>
+                <p>
+                    <label for="n2">Digite o fator de utilizacao (FU)</label>
+                    <input id="n2" type="number">
+                </p>
+                <button class="btn" type="button" onclick="calcular()">Calcular</button>
+            </section>
+
+            <section class="exercise-card exercise-result-card">
+                <h3>Passo a passo</h3>
+                <p id="res">Preencha os campos e clique em calcular para ver o resultado.</p>
+            </section>
+        </section>
+
+        <section class="exercise-notes">
+            <h3>Comentarios uteis</h3>
+            <p>O FU normalmente fica entre 0 e 1, conforme o uso real da carga.</p>
+            <p>O resultado desta etapa alimenta os proximos calculos do motor.</p>
+        </section>
+    </main>
+
+    <footer class="footer"></footer>
+    <script type="module" src="../js/main.js"></script>
+    <script src="../js/potencia-eixo.js"></script>
+</body>
+
+</html>

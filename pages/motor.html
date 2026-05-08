@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <title>Demanda do Motor</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="manifest" href="../manifest.json">
+</head>
+
+<body>
+    <header>
+        <a class="nav-back" href="../home.html" aria-label="Voltar ao inicio">&larr;</a>
+        <h1>Demanda do Motor</h1>
+        <button type="button" aria-label="Abrir menu rapido">H</button>
+    </header>
+
+    <main class="exercise-layout page-offset-top">
+        <section class="exercise-card exercise-page-header">
+            <p class="exercise-kicker">Etapa 2</p>
+            <h2>Demanda do motor</h2>
+            <p class="exercise-description">Converta a potencia de eixo em demanda aparente considerando fator de potencia e rendimento.</p>
+        </section>
+
+        <section class="exercise-main-grid">
+            <section class="exercise-card exercise-form-card">
+                <p>
+                    <label for="n1">Digite a potencia do eixo (CV)</label>
+                    <input id="n1" type="number">
+                </p>
+                <p>
+                    <label for="n2">Digite o fator de potencia (FP)</label>
+                    <input id="n2" type="number">
+                </p>
+                <p>
+                    <label for="n3">Digite o rendimento (0 a 1)</label>
+                    <input id="n3" type="number">
+                </p>
+                <button class="btn" type="button" onclick="calcular()">Calcular</button>
+            </section>
+
+            <section class="exercise-card exercise-result-card">
+                <h3>Passo a passo</h3>
+                <p id="res">Preencha os campos e clique em calcular para ver o resultado.</p>
+            </section>
+        </section>
+
+        <section class="exercise-notes">
+            <h3>Comentarios uteis</h3>
+            <p>A demanda e exibida em <strong>kVA</strong> com a conversao completa.</p>
+            <p>Informe FP e rendimento entre 0 e 1 para evitar erro de calculo.</p>
+        </section>
+    </main>
+
+    <footer class="footer"></footer>
+    <script type="module" src="../js/main.js"></script>
+    <script src="../js/demanda-motor.js"></script>
+</body>
+
+</html>

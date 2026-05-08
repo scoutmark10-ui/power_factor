@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <title>Demanda QGF</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="manifest" href="../manifest.json">
+</head>
+
+<body>
+    <header>
+        <a class="nav-back" href="../home.html" aria-label="Voltar ao inicio">&larr;</a>
+        <h1>Demanda QGF</h1>
+        <button type="button" aria-label="Abrir menu rapido">H</button>
+    </header>
+
+    <main class="exercise-layout page-offset-top">
+        <section class="exercise-card exercise-page-header">
+            <p class="exercise-kicker">Etapa 5</p>
+            <h2>Demanda geral do QGF</h2>
+            <p class="exercise-description">Some as demandas de motores (CCM) e iluminacao (QDL) para obter a demanda total do quadro geral.</p>
+        </section>
+
+        <section class="exercise-main-grid">
+            <section class="exercise-card exercise-form-card">
+                <p>
+                    <label for="n2">Digite a demanda do CCM (kVA)</label>
+                    <input id="n2" type="number">
+                </p>
+                <p>
+                    <label for="n3">Digite a demanda do QDL (kVA)</label>
+                    <input id="n3" type="number">
+                </p>
+                <button class="btn" type="button" onclick="calcular()">Calcular</button>
+            </section>
+
+            <section class="exercise-card exercise-result-card">
+                <h3>Passo a passo</h3>
+                <p id="res">Preencha os campos e clique em calcular para ver o resultado.</p>
+            </section>
+        </section>
+
+        <section class="exercise-notes">
+            <h3>Comentarios uteis</h3>
+            <p>Use os valores finais de <strong>D_CCM</strong> e <strong>D_QDL</strong> sempre em kVA.</p>
+            <p>Se houver mais de um bloco de motores, some primeiro no CCM e depois leve para o QGF.</p>
+        </section>
+    </main>
+
+    <footer class="footer"></footer>
+    <script type="module" src="../js/main.js"></script>
+    <script src="../js/qgf.js"></script>
+</body>
+
+</html>

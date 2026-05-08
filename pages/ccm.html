@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <title>Demanda CCM</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="manifest" href="../manifest.json">
+</head>
+
+<body>
+    <header>
+        <a class="nav-back" href="../home.html" aria-label="Voltar ao inicio">&larr;</a>
+        <h1>Demanda CCM</h1>
+        <button type="button" aria-label="Abrir menu rapido">H</button>
+    </header>
+
+    <main class="exercise-layout page-offset-top">
+        <section class="exercise-card exercise-page-header">
+            <p class="exercise-kicker">Etapa 3</p>
+            <h2>Demanda do CCM</h2>
+            <p class="exercise-description">Consolide a demanda total dos motores utilizando o fator de simultaneidade.</p>
+        </section>
+
+        <section class="exercise-main-grid">
+            <section class="exercise-card exercise-form-card">
+                <p>
+                    <label for="n1">Digite o numero de motores</label>
+                    <input id="n1" type="number">
+                </p>
+                <p>
+                    <label for="n2">Digite a demanda de cada motor (kVA)</label>
+                    <input id="n2" type="number">
+                </p>
+                <p>
+                    <label for="n3">Digite o fator de simultaneidade (FS)</label>
+                    <input id="n3" type="number">
+                </p>
+                <button class="btn" type="button" onclick="calcular()">Calcular</button>
+            </section>
+
+            <section class="exercise-card exercise-result-card">
+                <h3>Passo a passo</h3>
+                <p id="res">Preencha os campos e clique em calcular para ver o resultado.</p>
+            </section>
+        </section>
+
+        <section class="exercise-notes">
+            <h3>Comentarios uteis</h3>
+            <p>Use o valor de demanda por motor ja convertido para <strong>kVA</strong>.</p>
+            <p>Se os motores forem diferentes, calcule por grupos e depois some os resultados.</p>
+        </section>
+    </main>
+
+    <footer class="footer"></footer>
+    <script type="module" src="../js/main.js"></script>
+    <script src="../js/ccm.js"></script>
+</body>
+
+</html>

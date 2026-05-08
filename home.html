@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <title>Power Factor</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="manifest" href="./manifest.json">
+</head>
+
+<body>
+    <header>
+        <nav aria-label="Abrir menu">&#9776;</nav>
+        <h1><img class="logo" src="./img/logo.jpg" alt="logo">Power Factor</h1>
+        <button type="button" aria-label="Abrir menu rapido">H</button>
+    </header>
+
+    <div id="sidebar-overlay" class="sidebar-overlay"></div>
+    <aside id="sidebar" class="sidebar">
+        <button type="button" id="close-sidebar" class="close-sidebar" aria-label="Fechar">&times;</button>
+        <ul class="sidebar-links">
+            <li><a class="btn-sidebar" href="./home.html">Inicio</a></li>
+            <li><a class="btn-sidebar" href="./pages/potencia-eixo.html">Potencia do eixo</a></li>
+            <li><a class="btn-sidebar" href="./pages/motor.html">Demanda do motor</a></li>
+            <li><a class="btn-sidebar" href="./pages/ccm.html">Demanda CCM</a></li>
+            <li><a class="btn-sidebar" href="./pages/qdl.html">Demanda QDL</a></li>
+            <li><a class="btn-sidebar" href="./pages/qgf.html">Demanda QGF</a></li>
+            <li><a class="btn-sidebar" href="./pages/corrente.html">Corrente nominal</a></li>
+            <li><a class="btn-sidebar" href="./pages/carga-diaria.html">Fator de carga diaria</a></li>
+            <li><button type="button" id="theme-toggle" class="sidebar-btn">Alternar tema</button></li>
+            <li><button type="button" id="logout-btn" class="sidebar-btn">Sair / Trocar nome</button></li>
+        </ul>
+    </aside>
+
+    <main class="home-main">
+        <section class="intro home-hero card">
+            <h2>Bem-vindo(a) ao Power Factor</h2>
+            <p class="home-hero-text">Escolha um calculo para começar. Se estiver seguindo o fluxo completo de projeto, use a ordem sugerida abaixo.</p>
+            <div class="home-quick-grid">
+                <a class="home-quick-link" href="./pages/potencia-eixo.html">Iniciar fluxo</a>
+                <a class="home-quick-link" href="./pages/qgf.html">Ir para QGF</a>
+                <a class="home-quick-link" href="./pages/corrente.html">Corrente nominal</a>
+                <a class="home-quick-link" href="./pages/carga-diaria.html">Fator diario</a>
+            </div>
+        </section>
+
+        <section class="home-section">
+            <h3 class="home-section-title">Roteiro de calculo</h3>
+            <div class="calc-grid">
+                <article class="card calc-card">
+                    <p class="calc-step">Etapa 1</p>
+                    <h3>Potencia do eixo</h3>
+                    <p>Obtém a potencia efetiva usada no eixo a partir de PN e FU.</p>
+                    <div class="calc-tags">
+                        <span>Entrada: CV</span>
+                        <span>Saida: CV</span>
+                    </div>
+                    <a class="btn btn-card" href="./pages/potencia-eixo.html">Abrir calculadora</a>
+                </article>
+
+                <article class="card calc-card">
+                    <p class="calc-step">Etapa 2</p>
+                    <h3>Demanda do motor</h3>
+                    <p>Converte a potencia de eixo em demanda aparente considerando FP e rendimento.</p>
+                    <div class="calc-tags">
+                        <span>Entrada: CV, FP, r</span>
+                        <span>Saida: kVA</span>
+                    </div>
+                    <a class="btn btn-card" href="./pages/motor.html">Abrir calculadora</a>
+                </article>
+
+                <article class="card calc-card">
+                    <p class="calc-step">Etapa 3</p>
+                    <h3>Demanda CCM</h3>
+                    <p>Consolida a demanda total dos motores com fator de simultaneidade.</p>
+                    <div class="calc-tags">
+                        <span>Entrada: kVA, FS</span>
+                        <span>Saida: kVA</span>
+                    </div>
+                    <a class="btn btn-card" href="./pages/ccm.html">Abrir calculadora</a>
+                </article>
+
+                <article class="card calc-card">
+                    <p class="calc-step">Etapa 4</p>
+                    <h3>Demanda QDL</h3>
+                    <p>Calcula a demanda de iluminacao para cargas incandescentes e fluorescentes.</p>
+                    <div class="calc-tags">
+                        <span>Entrada: W, FP</span>
+                        <span>Saida: kVA</span>
+                    </div>
+                    <a class="btn btn-card" href="./pages/qdl.html">Abrir calculadora</a>
+                </article>
+
+                <article class="card calc-card">
+                    <p class="calc-step">Etapa 5</p>
+                    <h3>Demanda QGF</h3>
+                    <p>Soma os resultados do CCM e do QDL para fechar a demanda geral.</p>
+                    <div class="calc-tags">
+                        <span>Entrada: kVA</span>
+                        <span>Saida: kVA</span>
+                    </div>
+                    <a class="btn btn-card" href="./pages/qgf.html">Abrir calculadora</a>
+                </article>
+
+                <article class="card calc-card">
+                    <p class="calc-step">Apoio</p>
+                    <h3>Corrente nominal</h3>
+                    <p>Estima a corrente trifasica a partir da potencia, tensao, FP e rendimento.</p>
+                    <div class="calc-tags">
+                        <span>Entrada: CV, V</span>
+                        <span>Saida: A</span>
+                    </div>
+                    <a class="btn btn-card" href="./pages/corrente.html">Abrir calculadora</a>
+                </article>
+
+                <article class="card calc-card">
+                    <p class="calc-step">Apoio</p>
+                    <h3>Fator de carga diaria</h3>
+                    <p>Avalia o nivel de aproveitamento da carga usando demanda media e maxima.</p>
+                    <div class="calc-tags">
+                        <span>Entrada: mesma unidade</span>
+                        <span>Saida: adimensional</span>
+                    </div>
+                    <a class="btn btn-card" href="./pages/carga-diaria.html">Abrir calculadora</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="footer"></p>
+    </footer>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>
