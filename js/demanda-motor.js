@@ -1,5 +1,5 @@
 function calcular() {
-  const CV_TO_W = 735.5;
+  const CV_TO_W = 736;
 
   // potencia no eixo (cv)
   let p_eixo = Number(document.getElementById('n1').value) || 0;
@@ -19,7 +19,7 @@ function calcular() {
   } else if (fp > 1 || r > 1) {
     res.innerHTML = `<p style="color: #E57373;">FP e rendimento devem estar entre 0 e 1</p>`;
   } else {
-    // Formula: D_motor(kVA) = [(P_eixo * 735.5) / (FP * r)] / 1000
+    // Formula: D_motor(kVA) = [(P_eixo * 736) / (FP * r)] / 1000
     let p_w = p_eixo * CV_TO_W;
     let denominador = fp * r;
     let s_va = p_w / denominador;
@@ -28,7 +28,7 @@ function calcular() {
     res.innerHTML = `
       <div class="math-view">
         <p class="math-result">Resultado: ${d_motor.toFixed(2)} kVA</p>
-        <p class="math-step"><strong>Formula:</strong> D_motor(kVA) = [(P_eixo x 735.5) / (FP x r)] / 1000</p>
+        <p class="math-step"><strong>Formula:</strong> D_motor(kVA) = [(P_eixo x 736) / (FP x r)] / 1000</p>
         <p class="math-step"><strong>Substituindo:</strong> D_motor = [(${p_eixo} x ${CV_TO_W}) / (${fp} x ${r})] / 1000</p>
         <p class="math-step"><strong>Calculando:</strong> D_motor = (${s_va.toFixed(2)} VA) / 1000 = ${d_motor.toFixed(2)} kVA</p>
       </div>

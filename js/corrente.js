@@ -1,6 +1,6 @@
 // CORRENTE NOMINAL
 function calcular() {
-  const CV_TO_W = 735.5;
+  const CV_TO_W = 736;
 
   // potencia no eixo (cv)
   let pn = Number(document.getElementById('n1').value) || 0;
@@ -33,7 +33,7 @@ function calcular() {
     res.innerHTML = `
       <div class="math-view">
         <p class="math-result">Resultado: ${corrente.toFixed(2)} A</p>
-        <p class="math-step"><strong>Formula:</strong> I_n = (P_n x 735.5) / (sqrt(3) x r x FP x V)</p>
+        <p class="math-step"><strong>Formula:</strong> I_n = (P_n x 736) / (sqrt(3) x r x FP x V)</p>
         <p class="math-step"><strong>Substituindo:</strong> I_n = (${pn} x ${CV_TO_W}) / (${raiz3.toFixed(4)} x ${r} x ${fp} x ${v})</p>
         <p class="math-step"><strong>Calculando:</strong> I_n = ${p_w.toFixed(2)} / ${denominador.toFixed(4)} = ${corrente.toFixed(2)} A</p>
       </div>
